@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Verdana
+}
+
+p {
+  font-family: Verdana;
+  font-weight: 400;
+  
+}
+
+br {
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font_family: Verdana
+}
+
+h2{
+  font-size: 2.4em;
+  line-height: 1.1;
+  font-family: Verdana
+}
+
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  padding: 0.8em; /* Add padding for a round shape */
+  border-radius: 50%; /* Make the button round */
+  border: none; /* Remove the border */
+  background-color: #ffffff; /* Default background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.25s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #d6d9db; /* Turn grayer when hovering */
+}
+
+button:focus,
+button:focus-visible {
+  outline: none; /* Remove focus outline */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
