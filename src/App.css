@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   font-weight: 500;
   color: #000000;
@@ -22,7 +26,7 @@ body {
   flex-direction: column;
   place-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: scroll;
   min-width: 320px;
   min-height: 100vh;
   font-family: Verdana
@@ -31,7 +35,10 @@ body {
 p {
   font-family: Verdana;
   font-weight: 400;
-  
+}
+
+p:hover{
+  color: #1130e2
 }
 
 br {
@@ -53,6 +60,7 @@ h2{
 section {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  scroll-margin-top: 80px
 }
 
 button {
