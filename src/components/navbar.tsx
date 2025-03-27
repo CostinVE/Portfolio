@@ -15,13 +15,12 @@ const navItems: NavItems[] = [
 ];
 
 const Navbar: React.FC = () => {
-  // Function to programmatically scroll to a section
   const scrollTo = (target: string) => {
     scroller.scrollTo(target, {
-      duration: 100, // Duration of the scroll in milliseconds
-      delay: 0, // Delay before the scroll starts
-      smooth: "easeInOutQuart", // Smooth scrolling effect
-      offset: -80, // Adjust for fixed navbar height
+      duration: 100, 
+      delay: 0, 
+      smooth: "easeInOutQuart", 
+      offset: -80,
     });
   };
 
@@ -31,7 +30,7 @@ const Navbar: React.FC = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            onClick={() => scrollTo(item.target)} // Call scrollTo function on click
+            onClick={() => scrollTo(item.target)} 
             className="cursor-pointer hover:text-blue-600 hover:font-bold"
           >
             {item.label}

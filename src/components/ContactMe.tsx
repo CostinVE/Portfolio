@@ -8,6 +8,8 @@ export const ContactMe = () => {
     phone: '',
     message: '',
   });
+
+  // @ts-ignore
   const [attachment, setAttachment] = useState<File | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import {Link} from "react-scroll"
+
 import './App.css'
 import './index.css'
 import Navbar from './components/navbar'
