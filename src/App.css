@@ -75,12 +75,12 @@ button {
 }
 
 button:hover {
-  background-color: #d6d9db; /* Turn grayer when hovering */
+  background-color: #d6d9db; 
 }
 
 button:focus,
 button:focus-visible {
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
 @media (prefers-color-scheme: light) {

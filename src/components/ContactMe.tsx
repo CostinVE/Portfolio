@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
+
 export const ContactMe = () => {
+
+  const VITE_EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const VITE_EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const VITE_EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
+
+
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,13 +41,13 @@ export const ContactMe = () => {
       message: formData.message,
     };
 
-    // Use EmailJS to send the email
+
     emailjs
       .send(
-        'service_7l4p2xg', // Replace with your EmailJS service ID
-        'template_lxetgrn', // Replace with your EmailJS template ID
+        VITE_EMAILJS_SERVICE_ID,
+        VITE_EMAILJS_TEMPLATE_ID,
         emailData,
-        'NuwjyGeMydRI-g5bG' // Replace with your EmailJS user ID
+        VITE_EMAILJS_USER_ID
       )
       .then(
         (response) => {
