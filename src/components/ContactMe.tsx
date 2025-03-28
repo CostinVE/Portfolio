@@ -61,9 +61,8 @@ export const ContactMe = () => {
       <div className="flex gap-6 mb-8">
         {/* GitHub */}
         <a
-          href="https://github.com/your-github-profile"
+          href="https://github.com/CostinVE"
           target="_blank"
-          rel="noopener noreferrer"
           className="text-gray-700 hover:text-orange-600"
         >
           <svg
@@ -78,9 +77,8 @@ export const ContactMe = () => {
 
         {/* LinkedIn */}
         <a
-          href="https://linkedin.com/in/your-linkedin-profile"
+          href="https://www.linkedin.com/in/costin-velicu-83ba71263/"
           target="_blank"
-          rel="noopener noreferrer"
           className="text-gray-700 hover:text-blue-700"
         >
           <svg

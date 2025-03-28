@@ -25,16 +25,15 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-1/2 -translate-x-1/2 flex place-self-center w-fit bg-violet-100 text-black p-3 shadow-md rounded-lg z-10">
+    <nav className="hidden fixed top-0 left-1/2 -translate-x-1/2 sm:flex place-self-center w-fit bg-gray-200 text-black p-3 shadow-md rounded-lg z-10">
       <ul className="flex justify-center space-x-6">
         {navItems.map((item) => (
-          <li
+          <p
             key={item.id}
             onClick={() => scrollTo(item.target)} 
-            className="cursor-pointer hover:text-blue-600 hover:font-bold"
-          >
+            className="cursor-pointer hover:font-bold">
             {item.label}
-          </li>
+          </p>
         ))}
       </ul>
     </nav>

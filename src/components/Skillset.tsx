@@ -106,7 +106,7 @@ const skills3: Skill[] = [
   },
   {
     id: 3,
-    label: 'Graphic Design / UI',
+    label: 'User Interface',
     icon: FigmaImage,
     description: 'Tools like Figma or Adobe XD help create visually appealing designs and prototypes. Use them to design user interfaces and ensure a seamless user experience before development. These tools also facilitate collaboration between developers and designers, ensuring the final product aligns with user needs.',
   },
@@ -124,12 +124,12 @@ export const Skillset: React.FC = () => {
       {/* Frontend Stack */}
       <div className="w-full flex flex-col items-baseline border-zinc-500/50 border-4 border-double p-2">
         <h2 className="text-2xl font-bold mb-8 mt-4">Frontend Stack</h2>
-        <ul className="flex flex-row justify-between w-full  flex-wrap mb-4">
+        <ul className="flex flex-col sm:flex-row justify-between w-full  flex-wrap mb-4">
           {skills.map((skill) => (
             <li
               key={skill.id}
               onClick={() => setSelectedFrontendSkill(skill.label)}
-              className={`flex flex-row items-center p-4 rounded-lg shadow-md cursor-pointer ${
+              className={`flex flex-row items-center p-4 w-full sm:w-1/6 rounded-lg shadow-md cursor-pointer ${
                 selectedFrontendSkill === skill.label ? 'bg-blue-100' : ''
               }`}
             >
@@ -152,12 +152,12 @@ export const Skillset: React.FC = () => {
       {/* Backend Stack */}
       <div className="w-full flex flex-col items-baseline border-zinc-500/50 border-4 border-double p-2">
         <h2 className="text-2xl font-bold mb-8 mt-4">Backend Stack</h2>
-        <ul className="flex flex-row justify-start w-full  flex-wrap mb-4">
+        <ul className="flex flex-col sm:flex-row justify-start w-full  flex-wrap mb-4">
           {skills2.map((skill) => (
             <li
               key={skill.id}
               onClick={() => setSelectedBackendSkill(skill.label)}
-              className={`flex flex-row items-center p-4 rounded-lg shadow-md cursor-pointer ${
+              className={`flex flex-row items-center p-4 w-full sm:w-1/6 rounded-lg shadow-md cursor-pointer ${
                 selectedBackendSkill === skill.label ? 'bg-blue-100' : ''
               }`}
             >
@@ -180,12 +180,12 @@ export const Skillset: React.FC = () => {
       {/* Other Skills */}
       <div className="w-full flex flex-col items-baseline border-zinc-500/50 border-4 border-double p-2">
         <h2 className="text-2xl font-bold mb-8 mt-4">Other Skills</h2>
-        <ul className="flex flex-row justify-center flex-wrap">
+        <ul className="flex flex-col sm:flex-row justify-start w-full  flex-wrap mb-4">
           {skills3.map((skill) => (
             <li
               key={skill.id}
               onClick={() => setSelectedOtherSkill(skill.label)}
-              className={`flex flex-row items-center p-4 rounded-lg shadow-md cursor-pointer ${
+              className={`flex flex-row items-center p-4 w-full sm:w-1/6 rounded-lg shadow-md cursor-pointer ${
                 selectedOtherSkill === skill.label ? 'bg-blue-100' : ''
               }`}
             >

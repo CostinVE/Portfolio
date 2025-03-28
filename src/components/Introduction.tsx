@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ProfilePic from '../assets/ProfilePic.png'
 
 type Slider = {
   id: number
@@ -33,9 +34,10 @@ export const Introduction: React.FC = () => {
  
 
   return (
-    <div className="flex flex-row justify-between items-center">
+    <div className="flex flex-col sm:flex-row gap-6 justify-between items-center">
       <img
-        src="./src/assets/crop_profile_pic-removebg-preview.png"
+        src={ProfilePic}
+        className="rounded-full shadow-lg border-4 border-violet-100"
         width={420}
         alt="Profile"
       />
